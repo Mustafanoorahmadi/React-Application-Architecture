@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  font-family: var(--font-figtree);
+  font-family: var(--font-Iranian);
 }
 
 :lang(en) {
