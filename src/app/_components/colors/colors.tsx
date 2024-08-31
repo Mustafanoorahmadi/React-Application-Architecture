@@ -13,7 +13,7 @@ export const Colors: React.FC = () => (
   </div>
 );
 
-const ColorBox: React.FC<{ name: string; color: string }> = ({
+const ColorBox: React.FC<{ name: string, color: string }> = ({
   name,
   color,
 }) => (
