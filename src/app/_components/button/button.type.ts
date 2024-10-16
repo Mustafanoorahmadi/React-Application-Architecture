@@ -5,7 +5,7 @@ import { LoadingBehavior } from "../types/loading.behavior.type";
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> &
   ComponentBase &
   LoadingBehavior & {
-    isOutLine?: boolean;
+    isOutline?: boolean;
     isLink?: boolean;
     animatedIcon?: boolean;
     shape?: ButtonShape;
