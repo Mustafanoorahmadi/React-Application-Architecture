@@ -9,7 +9,7 @@ export const CourseCard: React.FC<CourseCardProps> = ({
   title,
   subTitle,
   level,
-  basePrice,
+  basePrice, 
   slug,
   recordStatus,
   duration,
