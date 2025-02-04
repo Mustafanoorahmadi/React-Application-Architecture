@@ -1,6 +1,6 @@
 import { CourseSummary } from "@/types/course-summary.interface";
 import { HomeHeroSection } from "./_components/home-hero-section/home-hero-section";
-import { CourseCardList } from "./(courses)/courses/_components/course-card-list";
+import { CourseCardList } from "./(courses)/_components/course-card-list";
 
 async function getNewesCourses(count: number): Promise<CourseSummary[]> {
   const res = await fetch(
@@ -19,7 +19,7 @@ export default async function Home() {
   return (
     <>
       <HomeHeroSection />
-      <section className="container pt-20">
+      <section className="container pt-20"> 
         <div className="text-center xl:text-right">
           <h2 className="text-2x1 font-extrabold">تازه ترین دوره های آموزشی</h2>
           <p>برای به روز ماندن , یاد گرفتن نکته های تازه و ضروری !</p>
