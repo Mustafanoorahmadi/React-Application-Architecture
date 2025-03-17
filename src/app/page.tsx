@@ -8,10 +8,11 @@ import Feature from "./_components/feature/feature";
 import { Button } from "./_components/button";
 import { BlogPostSummary } from "@/types/blog-post-summary.interface";
 import { BlogPostCardList } from "./(blog)/_components/blog-post-card-list";
+import { API_URL } from "@/configs/global";
 
 async function getNewesCourses(count: number): Promise<CourseSummary[]> {
   const res = await fetch(
-    `https://api.classbon.com/api/courses/newest/${count}`,
+    `${API_URL}/courses/newest/${count}`,
     {
       next: {
         revalidate: 24 * 60 * 60,
@@ -22,7 +23,7 @@ async function getNewesCourses(count: number): Promise<CourseSummary[]> {
 }
 
 async function getNewesPosts(count: number): Promise<BlogPostSummary[]> {
-  const res = await fetch(`https://api.classbon.com/api/blog/newest/${count}`, {
+  const res = await fetch(`${API_URL}/blog/newest/${count}`, {
     next: {
       revalidate: 24 * 60 * 60,
     },
